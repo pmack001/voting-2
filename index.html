@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Guilty or Not Guilty Voting App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Vote: Guilty or Not Guilty</h1>
+    <div class="buttons">
+      <button onclick="vote('guilty')">Guilty</button>
+      <button onclick="vote('notGuilty')">Not Guilty</button>
+    </div>
+    <div class="results">
+      <p>Guilty Votes: <span id="guiltyCount">0</span></p>
+      <p>Not Guilty Votes: <span id="notGuiltyCount">0</span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
