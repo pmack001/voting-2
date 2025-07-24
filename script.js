@@ -6,12 +6,10 @@ async function vote(option) {
   });
   updateDisplay();
 }
-
 async function updateDisplay() {
   const res = await fetch('/results');
   const data = await res.json();
   document.getElementById('guiltyCount').textContent = data.guilty || 0;
   document.getElementById('notGuiltyCount').textContent = data.notGuilty || 0;
 }
-
 window.onload = updateDisplay;
